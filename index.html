@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SmartNotes AI</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Heading -->
+        <div class="header">
+
+            <h1>✨ SmartNotes AI</h1>
+
+            <p>
+                Paste your notes and get an AI-powered summary instantly.
+            </p>
+
+        </div>
+
+
+        <!-- Notes Card -->
+        <div class="card">
+
+            <label for="notes">
+                Paste your notes
+            </label>
+
+            <textarea
+                id="notes"
+                placeholder="Paste your class notes, DSA notes, Java notes, or any long text here..."
+            ></textarea>
+
+
+            <!-- Options -->
+            <div class="options">
+
+                <div class="option">
+
+                    <label for="length">
+                        Summary length
+                    </label>
+
+                    <select id="length">
+
+                        <option value="Short">
+                            Short
+                        </option>
+
+                        <option value="Medium" selected>
+                            Medium
+                        </option>
+
+                        <option value="Long">
+                            Long
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="option">
+
+                    <label for="language">
+                        Output language
+                    </label>
+
+                    <select id="language">
+
+                        <option value="English" selected>
+                            English
+                        </option>
+
+                        <option value="Hindi">
+                            Hindi
+                        </option>
+
+                        <option value="Hinglish">
+                            Hinglish
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+            <!-- Button -->
+            <button id="summarizeBtn">
+                ✨ Summarize Notes
+            </button>
+
+
+            <!-- Loading -->
+            <div id="loading" class="loading hidden">
+
+                <div class="spinner"></div>
+
+                <span>
+                    AI is analyzing your notes...
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <!-- Result -->
+        <div class="result-card">
+
+            <div class="result-header">
+
+                <h2>
+                    AI Summary
+                </h2>
+
+                <button id="copyBtn">
+                    Copy
+                </button>
+
+            </div>
+
+
+            <div id="result" class="result">
+
+                Your summarized notes will appear here.
+
+            </div>
+
+        </div>
+
+
+        <!-- Footer -->
+        <footer>
+
+            SmartNotes AI • Powered by Gemini
+
+        </footer>
+
+    </div>
+
+
+    <!-- JavaScript -->
+    <script src="app.js"></script>
+
+</body>
+
+</html>
